@@ -1,7 +1,7 @@
 python:
     version: 0.0.0
 go:
-    packagename: github.com/speakeasy-sdks-staging/bolt
+    packagename: github.com/speakeasy-sdks-staging/plaid
     version: 0.0.0
 typescript:
     version: 0.0.0
