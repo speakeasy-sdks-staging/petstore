@@ -2,16 +2,13 @@ management:
     openapi-checksum: 2516596125ef223fbbef6c434d22eaac
     openapi-version: 1.0.0
     speakeasy-version: 1.3.2
-go:
-    version: 0.1.0
-    packagename: github.com/speakeasy-sdks-staging/petstore
-typescript:
-    version: 0.1.0
-    packagename: ""
 python:
     version: 0.1.0
-    packagename: ""
+go:
+    packagename: github.com/speakeasy-sdks-staging/petstore
+    version: 0.1.0
+typescript:
+    version: 0.1.0
 java:
     version: 0.1.0
-    packagename: ""
 telemetryenabled: true
