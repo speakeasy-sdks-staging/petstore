@@ -8,7 +8,7 @@ jobs:
     uses: speakeasy-api/sdk-generation-action/.github/workflows/sdk-generation.yaml@v7 # Import the sdk generation workflow which will handle the generation of the SDKs and publishing to the package managers
     with:
       speakeasy_version: latest
-      openapi_doc_location: https://assets.bolt.com/external-api-references/bolt.yml
+      openapi_doc_location: https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v3.0/petstore.yaml
       languages: |-
         - go: go
         - typescript: typescript
