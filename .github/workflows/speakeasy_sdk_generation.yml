@@ -1,0 +1,19 @@
+name: Generate
+
+on:
+  workflow_dispatch: {} # Allows manual triggering of the workflow to generate SDK
+
+jobs:
+  generate:
+    uses: speakeasy-api/sdk-generation-action/.github/workflows/sdk-generation.yaml@v7 # Import the sdk generation workflow which will handle the generation of the SDKs and publishing to the package managers
+    with:
+      speakeasy_version: latest
+      openapi_doc_location: https://assets.bolt.com/external-api-references/bolt.yml
+      languages: |-
+        - go: go
+        - typescript: typescript
+        - java: java
+        - python: python
+    secrets:
+      speakeasy_api_key: ${{ secrets.SPEAKEASY_PROD_API_KEY }}
+      github_access_token: ${{ secrets.GITHUB_TOKEN }}
